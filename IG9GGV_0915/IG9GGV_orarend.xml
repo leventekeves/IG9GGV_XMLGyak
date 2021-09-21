@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+	<ora id="1" tipus="Előadás">
+		<targy>Algoritmusok és vizsgálatuk</targy>
+		<idopont nap="Hétfő" tol="8" ig="10"/>
+		<helyszin>A3 III. emelet 313</helyszin>
+		<oktato>Dr. Házy Attila</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="2" tipus="Gyakorlat">
+		<targy>Algoritmusok és vizsgálatuk</targy>
+		<idopont nap="Hétfő" tol="10" ig="12"/>
+		<helyszin>A3 III. emelet 313</helyszin>
+		<oktato>Dr. Házy Attila</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="3" tipus="Előadás">
+		<targy>WEB technológiák 1.</targy>
+		<idopont nap="Hétfő" tol="12" ig="14"/>
+		<helyszin>A1. III. emelet 305.</helyszin>
+		<oktato>Agárdi Anita</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="4" tipus="Előadás">
+		<targy>Mestersége intelligencia alapok</targy>
+		<idopont nap="Hétfő" tol="14" ig="17"/>
+		<helyszin>A1 magasföldszint XXXII.</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="5" tipus="Gyakorlat">
+		<targy>WEB technológiák</targy>
+		<idopont nap="Hétfő" tol="17" ig="19"/>
+		<helyszin>Informatika épület 101.</helyszin>
+		<oktato>Kunné Tamás Judit</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="6" tipus="Előadás">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont nap="Kedd" tol="12" ig="14"/>
+		<helyszin>A2 földszint I.</helyszin>
+		<oktato>Dr Bednarik László</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="7" tipus="Gyakorlat">
+		<targy>Adatkezelés XML-ben</targy>
+		<idopont nap="Kedd" tol="14" ig="16"/>
+		<helyszin>Informatika épület 103.</helyszin>
+		<oktato>Dr Bednarik László</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="8" tipus="Gyakorlat">
+		<targy>Mesterséges intelligencia alapok</targy>
+		<idopont nap="Szerda" tol="13" ig="14"/>
+		<helyszin>Informatika épület 15.</helyszin>
+		<oktato>Dr. Dudás László</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="9" tipus="Előadás">
+		<targy>Vállalati információs rendszerek fejlesztése</targy>
+		<idopont nap="Szerda" tol="16" ig="18"/>
+		<helyszin>Informatika épület 103.</helyszin>
+		<oktato>Dr. Sasvári Péter László</oktato>
+		<szak>PTI</szak>
+	</ora>
+	
+	<ora id="10" tipus="Gyakorlat">
+		<targy>Vállalati információs rendszerek fejlesztése</targy>
+		<idopont nap="Szerda" tol="18" ig="20"/>
+		<helyszin>Informatika épület 103.</helyszin>
+		<oktato>Dr. Sasvári Péter László</oktato>
+		<szak>PTI</szak>
+	</ora>
+</orarend>
