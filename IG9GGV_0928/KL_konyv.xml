@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE konyvek SYSTEM "KL_konyv.dtd">
+
+<konyvek>
+	<konyv id="k1">
+		<cim>Oktatást támogató informatikai rendszerek</cim>
+		<kiadasi-ev>2014</kiadasi-ev>
+		<kiado>JATEPress</kiado> 
+		<szerzo>Goldman Júlia</szerzo>
+		<szerzo>Gutai Árpád</szerzo>
+		<szerzo>Németh Tamás</szerzo>
+		<szerzo>Sárkány Rita</szerzo>
+	</konyv>
+		<konyv id="k2">
+		<cim>Gyors kontextusalapú tervezés - A felhasználó-központú tervezés technikájának gyakorlati kalauza</cim>
+		<kiadasi-ev>2010</kiadasi-ev>
+		<kiado>Akadémiai Kiadó</kiado>
+		<szerzo>Karen Holtzblatt</szerzo>
+		<szerzo>Jessamyn Burns Wendell</szerzo>
+	</konyv>
+		<konyv id="k3">
+		<cim>Fordítóprogramok szerkesztése Flex és Bison segítségével</cim>
+		<kiadasi-ev>2014</kiadasi-ev>
+		<kiado>Erdélyi Múzeum-Egyesület</kiado>
+		<szerzo>Bodó Zalán</szerzo>
+		<absztrakt>Jelen jegyzet négy fő fejezetből áll. Az 1. fejezet bevezetőt nyújt a formális nyelvek és fordítóprogramok elméletébe, ismertetve a jegyzet további részeinek megértéséhez szükséges fogalmakat. Így bemutatásra kerülnek a generatív nyelvtanok, véges automaták, reguláris kifejezések, veremautomaták, illetve a fordítóprogramok a lexikális, szintaktikai, szemantikai elemzések, a kódgenerálás és kódoptimalizálás témakörének rövid ismertetésével. A 2. fejezet a lexikális elemzésben használt Flex eszközt mutatja be, ismertetve a leíró fájlok felépítését, a rendelkezésünkre álló reguláris kifejezéseket, illetve a Flexet vezérlő illesztési mechanizmust. A 3. fejezet a Bisonról szól, amit szintaktikai és szemantikai elemző generálásra, illetve kódgenerálásra használhatunk. A 4. fejezet a Flex és a Bison együttes működését hivatott bemutatni példákon keresztül, illetve azt, hogy hogyan tudunk saját fordítóprogramot szerkeszteni ezen eszközök és a Netwide Assembler segítségével.</absztrakt>
+	</konyv>
+</konyvek>

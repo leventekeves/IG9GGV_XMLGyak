@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT modell (A*, B*, C*)>
+	<!ELEMENT A (Aa, Ab, Ac)>
+		<!ATTLIST A Aa ID #REQUIRED>
+	
+	<!ELEMENT B>
+	
+	<!ELEMENT C>
