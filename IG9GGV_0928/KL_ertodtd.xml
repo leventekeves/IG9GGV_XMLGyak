@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE modell SYSTEM "KL_ertodtd.dtd" >
+
+<modell>
+  <A Aa="idvalue0">
+    <Ab>
+      <Abx>Abx</Abx>
+      <Aby>Aby</Aby>
+    </Ab>
+    <Ac>
+      <Acd>Acd</Acd>
+      <Ace>Ace</Ace>
+    </Ac>
+  </A>
+  
+  <B Ba="idvalue1" Bc="idvalue0">
+    <Bb>
+      <Bbx>Bbx</Bbx>
+      <Bby>Bby</Bby>
+    </Bb>
+  </B>
+  
+  <C Ca="idvalue2">
+    <Cb>Cb</Cb>
+  </C>
+  
+  <A_B A_B_a="idvalue0" A_B_b="idvalue0">
+    <A_Bc>A_Bc</A_Bc>
+  </A_B>
+</modell>

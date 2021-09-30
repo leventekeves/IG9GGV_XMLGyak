@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE modell SYSTEM "KL_adatbazis.dtd" >
+
+<adatbazis>
+	<dolgozo id="d01">
+		<nev>Gipsz Jakab</nev>
+		<fizetes>100000</fizetes>
+	</dolgozo>
+</adatbazis>
