@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KL_ertoxsd.xsd">
+  <A a1="0">
+    <B>B</B>
+    <C>C</C>
+  </A>
+  <B b1="0"/>
+  <C ac1="0" ac2="0"/>
+</modell>
