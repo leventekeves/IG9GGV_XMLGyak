@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KL_konyv1.xsd">
+	<konyv isbn="">
+		<cim>Egy Jó Könyv</cim>
+		<szerzo>Kis Dezső</szerzo>
+		<szereplo>
+			<nev>Nagy István</nev>
+			<baratja>Kis Béla</baratja>
+			<szuletett>1987-01-23</szuletett>
+			<jellemzes>Alacsony</jellemzes>
+		</szereplo>
+		<szereplo>
+			<nev>Szabó Gyula</nev>
+			<szuletett>1978-05-11</szuletett>
+			<jellemzes>Magas</jellemzes>
+		</szereplo>
+	</konyv>
+</konyvek>

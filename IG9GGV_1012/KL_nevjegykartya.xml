@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="KL_nevjegykartya.xsd">
+	<nevjegykartya>
+		<nev>Kévés Levente</nev>
+		<ceg>
+			<nev>Miskolci Egyetem</nev>
+			<cim>
+				<iranyitoszam>3515</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Egyetem út</utca>
+				<hazszam>1</hazszam>
+			</cim>
+			<telefonszam>0646565111</telefonszam>
+			<weblap>www.uni-miskolc.hu</weblap>
+		</ceg>
+		<beosztas>Hallgató</beosztas>
+		<telefonszam>06302345544</telefonszam>
+		<email>keveslev@gmail.com</email>
+	</nevjegykartya>
+	
+	<nevjegykartya>
+		<nev>Nagy István</nev>
+		<ceg>
+			<nev>Miskolci Egyetem</nev>
+			<cim>
+				<iranyitoszam>3515</iranyitoszam>
+				<varos>Miskolc</varos>
+				<utca>Egyetem út</utca>
+				<hazszam>1</hazszam>
+			</cim>
+			<telefonszam>0646565111</telefonszam>
+			<weblap>www.uni-miskolc.hu</weblap>
+		</ceg>
+		<beosztas>Hallgató</beosztas>
+		<telefonszam>06304567788</telefonszam>
+		<email>nagyistvan@gmail.com</email>
+	</nevjegykartya>
+</nevjegykartyak>
