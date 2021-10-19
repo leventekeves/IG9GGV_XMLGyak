@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<szemelyek>
+	<szemely id="o01">
+		<nev>Kévés Levente</nev>
+		<kor>24</kor>
+		<varos>Miskolc</varos>
+	</szemely>
+	
+	<szemely id="o02">
+		<nev>Nagy Lajos</nev>
+		<kor>43</kor>
+		<varos>Eger</varos>
+	</szemely>
+	
+	<szemely id="o03">
+		<nev>Kis Péter</nev>
+		<kor>65</kor>
+		<varos>Debrecen</varos>
+	</szemely>
+</szemelyek>
