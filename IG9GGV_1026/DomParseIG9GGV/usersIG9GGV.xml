@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="usersIG9GGV.xsd">
+	<user id="1">
+		<firstname>Levente</firstname>
+		<lastname>Kévés</lastname>
+		<profession>Student</profession>
+	</user>
+	
+	<user id="2">
+		<firstname>Lajos</firstname>
+		<lastname>Nagy</lastname>
+		<profession>Plumber</profession>
+	</user>
+	
+	<user id="3">
+		<firstname>István</firstname>
+		<lastname>Kis</lastname>
+		<profession>Janitor</profession>
+	</user>
+</users>
