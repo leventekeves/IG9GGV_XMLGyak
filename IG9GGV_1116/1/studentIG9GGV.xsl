@@ -7,6 +7,7 @@
 				<h2>Hallgatój adatai</h2>
 				<table border="1">
 					<tr bgcolor="#9acd32">
+						<th>ID</th>
 						<th>Vezetéknév</th>
 						<th>Keresztnév</th>
 						<th>Becenév</th>
@@ -14,6 +15,9 @@
 					</tr>
 					<xsl:for-each select="class/student">
 						<tr>
+							<td>
+								<xsl:value-of select="@id" />
+							</td>
 							<td>
 								<xsl:value-of select="vezeteknev" />
 							</td>

@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <h2>Hallgat&oacute;k apply-template</h2>
+        	
+        <p>
+            	 	ID: <span style="color: green">01</span>
+            <br>
+            	 	Vezet&eacute;kn&eacute;v: <span style="color: green">K&eacute;v&eacute;s</span>
+            <br>
+              		Keresztn&eacute;v: <span style="color:brown">Levente</span>
+            <br>
+            <span>Levi</span>
+  		Kor: <span style="color:blue">24</span>
+            <br>
+              		Fizet&eacute;s: <span style="color:red">700000</span>
+            <br>
+        </p>
+        	
+        <p>
+            	 	ID: <span style="color: green">02</span>
+            <br>
+            	 	Vezet&eacute;kn&eacute;v: <span style="color: green">Nagy</span>
+            <br>
+              		Keresztn&eacute;v: <span style="color:brown">Attila</span>
+            <br>
+            <span>Ati</span>
+  		Kor: <span style="color:blue">23</span>
+            <br>
+              		Fizet&eacute;s: <span style="color:red">800000</span>
+            <br>
+        </p>
+        	
+        <p>
+            	 	ID: <span style="color: green">03</span>
+            <br>
+            	 	Vezet&eacute;kn&eacute;v: <span style="color: green">Kis</span>
+            <br>
+              		Keresztn&eacute;v: <span style="color:brown">R&oacute;bert</span>
+            <br>
+            <span>Robi</span>
+  		Kor: <span style="color:blue">22</span>
+            <br>
+              		Fizet&eacute;s: <span style="color:red">600000</span>
+            <br>
+        </p>
+        
+    </body>
+</html>
