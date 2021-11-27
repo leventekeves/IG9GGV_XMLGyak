@@ -4,10 +4,11 @@
 		<html>
 			<h2>Lista</h2>
 			<ul>
-				<xsl:for-each-group select="/autok/auto" group-by="tipus">
+				<xsl:for-each-group select="/autok/auto" group-by="tulaj/varos">
 					<xsl:sort select="count(current-group())" order="descending"/>
 					<li>
-						<xsl:value-of select="current-grouping-key()"/>: <xsl:value-of select="count(current-group())"/>
+						<xsl:value-of select="current-grouping-key()"/>: <xsl:value-of select="count(current-group())"/>,
+						Összár: <xsl:value-of select="sum(current-group()/ar)"/>
 					</li>
 				</xsl:for-each-group>
 			</ul>
