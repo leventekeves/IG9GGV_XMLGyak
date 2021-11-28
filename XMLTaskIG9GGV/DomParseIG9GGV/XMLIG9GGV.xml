@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pizzalanc_nyilvantartas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaIG9GGV.xsd">
+	<pizzalancok >
+		<pizzalanc pl_ID="01">
+			<nev>McPizza</nev>
+			<alapitas_idopontja>1987-11-21</alapitas_idopontja>
+			<tozsden>true</tozsden>
+		</pizzalanc>
+		<pizzalanc pl_ID="02">
+			<nev>Pizza King</nev>
+			<alapitas_idopontja>1975-07-23</alapitas_idopontja>
+			<tozsden>false</tozsden>
+		</pizzalanc>
+	</pizzalancok>
+	
+	<vezerigazgatok>
+		<vezerigazgato vi_ID="01">
+			<nev>Török Vilmos</nev>
+			<szuletesi_datum>1984-03-13</szuletesi_datum>
+			<nem>Férfi</nem>
+		</vezerigazgato>
+		<vezerigazgato vi_ID="02">
+			<nev>Fekete Ágnes</nev>
+			<szuletesi_datum>1974-04-23</szuletesi_datum>
+			<nem>Nő</nem>
+		</vezerigazgato>
+	</vezerigazgatok>
+	
+	<etteremek>
+		<etterem em_ID="01" pl_IDREF="01">
+			<cim>
+				<varos>Budapest</varos>
+				<utca>Nagy út</utca>
+				<hazszam>12</hazszam>
+			</cim>
+		</etterem>
+		<etterem em_ID="02" pl_IDREF="01">
+			<cim>
+				<varos>Debrecen</varos>
+				<utca>Kerek út</utca>
+				<hazszam>5</hazszam>
+			</cim>
+		</etterem>
+		<etterem em_ID="03" pl_IDREF="02">
+			<cim>
+				<varos>Budapest</varos>
+				<utca>Kis út</utca>
+				<hazszam>7</hazszam>
+			</cim>
+		</etterem>
+		<etterem em_ID="04" pl_IDREF="02">
+			<cim>
+				<varos>Budapest</varos>
+				<utca>Nagy tér</utca>
+				<hazszam>21</hazszam>
+			</cim>
+		</etterem>
+		<etterem em_ID="05" pl_IDREF="02">
+			<cim>
+				<varos>Debrecen</varos>
+				<utca>Kis tér</utca>
+				<hazszam>13</hazszam>
+			</cim>
+		</etterem>
+	</etteremek>
+	
+	<etelek>
+		<etel el_ID="01">
+			<nev>Sonkás pizza</nev>
+			<ar>1100</ar>
+			<alapanyag>Sonka</alapanyag>
+			<alapanyag>Sajt</alapanyag>
+		</etel>
+		<etel el_ID="02">
+			<nev>Sonkás-kukoricás pizza</nev>
+			<ar>1300</ar>
+			<alapanyag>Sonka</alapanyag>
+			<alapanyag>Kukorica</alapanyag>
+			<alapanyag>Sajt</alapanyag>
+		</etel>
+		<etel el_ID="03">
+			<nev>Szalámis pizza</nev>
+			<ar>1600</ar>
+			<alapanyag>Szalámi</alapanyag>
+			<alapanyag>Sajt</alapanyag>
+		</etel>
+	</etelek>
+	
+	<alkalmazottak>
+		<alkalmazott a_ID="01" em_IDREF="05">
+			<nev>Fekete Balázs</nev>
+			<szuletesi_datum>1988-01-12</szuletesi_datum>
+			<fizetes>260000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="02" em_IDREF="04">
+			<nev>Balogh Sára</nev>
+			<szuletesi_datum>1977-02-22</szuletesi_datum>
+			<fizetes>300000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="03" em_IDREF="05">
+			<nev>Csonka Gábor</nev>
+			<szuletesi_datum>2001-12-12</szuletesi_datum>
+			<fizetes>460000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="04" em_IDREF="02">
+			<nev>Farkas Anita</nev>
+			<szuletesi_datum>1999-03-21</szuletesi_datum>
+			<fizetes>257000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="05" em_IDREF="01">
+			<nev>Antal Benjamin</nev>
+			<szuletesi_datum>1956-11-30</szuletesi_datum>
+			<fizetes>310000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="06" em_IDREF="03">
+			<nev>Csonka Ábel</nev>
+			<szuletesi_datum>1976-07-11</szuletesi_datum>
+			<fizetes>265000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="07" em_IDREF="03">
+			<nev>Vászoly Martina</nev>
+			<szuletesi_datum>1987-12-21</szuletesi_datum>
+			<fizetes>280000</fizetes>
+		</alkalmazott>
+		<alkalmazott a_ID="08" em_IDREF="03">
+			<nev>Szabó Soma</nev>
+			<szuletesi_datum>1994-05-12</szuletesi_datum>
+			<fizetes>400000</fizetes>
+		</alkalmazott>
+	</alkalmazottak>
+	
+	<vezetesek>
+		<vezeti pl_IDREF="01" vi_IDREF="01">
+			<kinevezes_idopontja>2015-01-12</kinevezes_idopontja>
+		</vezeti>
+		<vezeti pl_IDREF="02" vi_IDREF="02">
+			<kinevezes_idopontja>2020-10-11</kinevezes_idopontja>
+		</vezeti>
+	</vezetesek>
+	
+	<kaphatok>
+		<kaphato em_IDREF="01" el_IDREF="01">
+			<miota>1987-11-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="01" el_IDREF="02">
+			<miota>1987-11-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="01" el_IDREF="03">
+			<miota>1987-11-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="02" el_IDREF="02">
+			<miota>1997-12-23</miota>
+		</kaphato>
+		<kaphato em_IDREF="02" el_IDREF="03">
+			<miota>1987-12-24</miota>
+		</kaphato>
+		<kaphato em_IDREF="03" el_IDREF="03">
+			<miota>2001-12-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="04" el_IDREF="01">
+			<miota>1987-06-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="04" el_IDREF="03">
+			<miota>1987-12-30</miota>
+		</kaphato>
+		<kaphato em_IDREF="05" el_IDREF="01">
+			<miota>2011-12-21</miota>
+		</kaphato>
+		<kaphato em_IDREF="05" el_IDREF="02">
+			<miota>2020-12-21</miota>
+		</kaphato>
+	</kaphatok>
+</pizzalanc_nyilvantartas>
+

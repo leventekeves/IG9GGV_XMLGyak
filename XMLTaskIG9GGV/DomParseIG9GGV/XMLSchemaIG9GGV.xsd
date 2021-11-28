@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="pizzalanc_nyilvantartas">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pizzalancok">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="pizzalanc" type="pizzalancTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="vezerigazgatok">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="vezerigazgato" type="vezerigazgatoTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="etteremek">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="etterem" type="etteremTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="etelek">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="etel" type="etelTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="alkalmazottak">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alkalmazott" type="alkalmazottTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="vezetesek">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="vezeti" type="vezetiTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="kaphatok">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="kaphato" type="kaphatoTipus" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="pizzalancPK">
+			 <xs:selector xpath="pizzalancok/pizzalanc" /> 
+			 <xs:field xpath="@pl_ID" /> 
+		</xs:key>
+		<xs:key name="vezerigazgatoPK">
+			 <xs:selector xpath="vezerigazgatok/vezerigazgato" /> 
+			 <xs:field xpath="@vi_ID" /> 
+		</xs:key>
+		<xs:key name="etteremPK">
+			 <xs:selector xpath="etteremek/etterem" /> 
+			 <xs:field xpath="@em_ID" /> 
+		</xs:key>
+		<xs:key name="etelPK">
+			 <xs:selector xpath="etelek/etel" /> 
+			 <xs:field xpath="@el_ID" /> 
+		</xs:key>
+		<xs:key name="alkalmazottPK">
+			 <xs:selector xpath="alkalmazottak/alkalmazott" /> 
+			 <xs:field xpath="@a_ID" /> 
+		</xs:key>
+		
+		<xs:keyref refer="etteremPK" name="etteremFK">
+			<xs:selector xpath="kaphatok/kaphato" />
+			<xs:field xpath="@em_IDREF" />
+		</xs:keyref>
+		<xs:keyref refer="etelPK" name="etelFK">
+			<xs:selector xpath="kaphatok/kaphato" />
+			<xs:field xpath="@el_IDREF" />
+		</xs:keyref>
+		<xs:keyref refer="pizzalancPK" name="pizzalancFK">
+			<xs:selector xpath="vezetesek/vezeti" />
+			<xs:field xpath="@pl_IDREF" />
+		</xs:keyref>
+		<xs:keyref refer="vezerigazgatoPK" name="vezerigazgatoFK">
+			<xs:selector xpath="vezetesek/vezeti" />
+			<xs:field xpath="@vi_IDREF" />
+		</xs:keyref>
+		
+		<xs:keyref refer="pizzalancPK" name="etteremPizzalancFK">
+			<xs:selector xpath="ettermek/etterem" />
+			<xs:field xpath="@pl_IDREF" />
+		</xs:keyref>
+		<xs:keyref refer="etteremPK" name="alkalmazottEtteremFK	">
+			<xs:selector xpath="alkalmazottak/alkalmazott" />
+			<xs:field xpath="@em_IDREF" />
+		</xs:keyref>
+		
+		<xs:unique name="unique-vezetes-pl">
+    		<xs:selector xpath="vezetesek/vezeti"/>
+    		<xs:field xpath="@pl_IDREF"/>
+   		</xs:unique>
+   		<xs:unique name="unique-vezetes-vi">
+    		<xs:selector xpath="vezetesek/vezeti"/>
+    		<xs:field xpath="@vi_IDREF"/>
+   		</xs:unique>
+	</xs:element>
+	
+	<xs:complexType name="pizzalancTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" />
+			<xs:element name="alapitas_idopontja" type="xs:date" />
+			<xs:element name="tozsden" type="xs:boolean" />
+		</xs:sequence>
+		<xs:attribute name="pl_ID" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="vezerigazgatoTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" />
+			<xs:element name="szuletesi_datum" type="xs:date" />
+			<xs:element name="nem" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="vi_ID" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="etteremTipus">
+		<xs:sequence>
+			<xs:element name="cim" type="cimTipus" />
+		</xs:sequence>
+		<xs:attribute name="em_ID" type="xs:integer" use="required" />
+		<xs:attribute name="pl_IDREF" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="etelTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" />
+			<xs:element name="ar" type="xs:integer" />
+			<xs:element name="alapanyag" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="el_ID" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="alkalmazottTipus">
+		<xs:sequence>
+			<xs:element name="nev" type="xs:string" />
+			<xs:element name="szuletesi_datum" type="xs:date" />
+			<xs:element name="fizetes" type="xs:integer" />
+		</xs:sequence>
+		<xs:attribute name="a_ID" type="xs:integer" use="required" />
+		<xs:attribute name="em_IDREF" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="vezetiTipus">
+		<xs:sequence>
+			<xs:element name="kinevezes_idopontja" type="xs:date" />
+		</xs:sequence>
+		<xs:attribute name="pl_IDREF" type="xs:integer" use="required" />
+		<xs:attribute name="vi_IDREF" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="kaphatoTipus">
+		<xs:sequence>
+			<xs:element name="miota" type="xs:date" />
+		</xs:sequence>
+		<xs:attribute name="em_IDREF" type="xs:integer" use="required" />
+		<xs:attribute name="el_IDREF" type="xs:integer" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="cimTipus">
+		<xs:sequence>
+			<xs:element name="varos" type="xs:string" />
+			<xs:element name="utca" type="xs:string" />
+			<xs:element name="hazszam" type="xs:integer" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
